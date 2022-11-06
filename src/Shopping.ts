@@ -30,7 +30,7 @@ export class ShoppedItems {
     /**
      * Shop many of the same product
      */
-    add(goods: Goods, quantity: number): this {
+    add(goods: Goods, quantity?: number): this {
         quantity = quantity || 1;
         this.items.push(new ShoppingItem(goods, quantity));
         return this;

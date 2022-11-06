@@ -37,7 +37,7 @@ export default class ReceiptGenerator {
         receipt.getEntries().forEach((entry) => {
             result.push(
                 entry.quantity + ' ' +
-                (entry.goods.isImported() ? 'imported' : '') +
+                (entry.goods.isImported() ? 'imported ' : '') +
                 entry.goods.getName() + ': ' +
                 entry.price?.toFixed(2)
             );

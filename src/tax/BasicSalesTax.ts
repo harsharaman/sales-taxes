@@ -8,7 +8,7 @@ export default class BasicSalesTax implements ITax {
         Goods.EXCLUSIONTYPES.MEDICAL,
     ];
 
-    calculate(goods: Goods): number {
+    calculate(goods: Goods): number { 
         if (BasicSalesTax.TAXEXCLUDUEDTYPES.indexOf(goods.getType()) !== -1) {
             return 0.0;
         }
