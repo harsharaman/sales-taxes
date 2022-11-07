@@ -49,3 +49,22 @@ Output 3:
 > Total: 74.68
 
 ```
+
+## Implementation
+
+All the required outputs is tested through Jest framework which can be found in the test directory.
+Assumptions made are commented near the corresponding code blocks.
+
+After cloning the repo, there are two ways to build this solution. One is through NPM:
+
+```
+npm install
+npm test
+```
+
+And the other is through Docker:
+
+```
+docker build -t sales-taxes .
+docker run <IMAGE ID>
+```
